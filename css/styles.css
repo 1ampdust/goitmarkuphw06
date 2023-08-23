@@ -239,6 +239,12 @@ p {
   padding: 72px 0;
 }
 
+.list-two {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .list-item {
   padding: 20px;
   border-radius: 10px;
@@ -256,6 +262,7 @@ p {
 }
 
 .list-paragraph {
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
@@ -267,43 +274,19 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .section-two {
-    padding: 120px 0;
-  }
-
   .list-two {
-    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .list-item {
-    flex-basis: calc((100% - 30px) / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 8px;
   }
 }
 
 @media screen and (min-width: 1158px) {
-  .section-two {
-    padding: 120px 0;
-  }
-
-  .list-two {
-    display: flex;
-    gap: 24px;
-  }
-
-  .list-item {
-    flex-basis: calc((100% - 30px) / 3);
-  }
-
-  .list-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--navy-blue);
-    margin-bottom: 8px;
-  }
-
-  .icon-container {
-    display: inline-block;
-  }
 }

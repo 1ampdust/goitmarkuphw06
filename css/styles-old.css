@@ -257,6 +257,9 @@ address {
 }
 
 /* Section 2 Styles */
+.section-two {
+  padding: 120px 0;
+}
 
 .list-two {
   display: flex;
