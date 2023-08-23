@@ -232,31 +232,6 @@ address {
 }
 
 /* Section 1 Styles */
-.section-one {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/ofiice-picture.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 188px 0;
-  color: var(--white);
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.section-title-one {
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--white);
-  max-width: 496px;
-  margin: 0 auto;
-  margin-bottom: 48px;
-}
 
 .section-button {
   background-color: var(--iris);
@@ -282,9 +257,6 @@ address {
 }
 
 /* Section 2 Styles */
-.section-two {
-  padding: 120px 0;
-}
 
 .list-two {
   display: flex;

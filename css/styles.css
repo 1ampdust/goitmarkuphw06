@@ -84,7 +84,34 @@ p {
   overflow: hidden;
 }
 
+/* common style */
+
+.container {
+  max-width: 426px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
 /* Section 1 */
+
+.container {
+  max-width: 428px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
 
 .section-one {
   max-width: 428px;
@@ -102,6 +129,52 @@ p {
   background-size: cover;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/section1-bg-mob@2x.jpg);
+  }
+}
+
+.section-title-one {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  max-width: 320px;
+  margin: 0 auto 72px;
+  margin-bottom: 48px;
+}
+
+.section-button {
+  background-color: var(--iris);
+  font-family: var(--primaty-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: background-color var(--transition);
+}
+
+.section-button:hover,
+.section-button:focus {
+  background-color: var(--ocean);
+}
+
 @media screen and (min-width: 768px) {
   .section-one {
     max-width: 768px;
@@ -112,15 +185,125 @@ p {
       url(../images/section1-bg-tab.jpg);
   }
 
-  @media screen and (min-width: 1158px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     .section-one {
-      max-width: 1440px;
-      padding: 188px 0;
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/section1-bg-desk.jpg);
+        url(../images/section1-bg-tab@2x.jpg);
     }
+  }
+
+  .section-title-one {
+    max-width: 496px;
+    margin: 0 auto 36px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-one {
+    max-width: 1440px;
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/section1-bg-desk.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .section-one {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/section1-bg-desk@2x.jpg);
+    }
+  }
+
+  .section-title-one {
+    margin: 0 auto 48px;
+  }
+}
+
+/* Section 2 */
+
+.section-two {
+  padding: 72px 0;
+}
+
+.list-item {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.list-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+}
+
+.list-paragraph {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: var(--slate);
+}
+
+.icon-container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .section-two {
+    padding: 120px 0;
+  }
+
+  .list-two {
+    gap: 24px;
+  }
+
+  .list-item {
+    flex-basis: calc((100% - 30px) / 3);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-two {
+    padding: 120px 0;
+  }
+
+  .list-two {
+    display: flex;
+    gap: 24px;
+  }
+
+  .list-item {
+    flex-basis: calc((100% - 30px) / 3);
+  }
+
+  .list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    margin-bottom: 8px;
+  }
+
+  .icon-container {
+    display: inline-block;
   }
 }
