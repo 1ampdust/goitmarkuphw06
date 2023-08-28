@@ -1432,8 +1432,10 @@ li.menu-list-item:not(:last-child) {
 
 .card-list {
   display: flex;
-  flex-direction: column;
   row-gap: 48px;
+  align-content: center;
+  flex-wrap: wrap;
+  width: auto;
 }
 
 .filters {
